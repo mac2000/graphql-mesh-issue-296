@@ -1,0 +1,25 @@
+sources:
+  # - name: Articles
+  #   handler:
+  #     graphql:
+  #       endpoint: http://localhost:4002/graphql
+  - name: Gateway
+    handler:
+      federation:
+        serviceList:
+          - name: Articles
+            url:  http://localhost:4002/graphql
+  - name: Accounts
+    handler:
+      graphql:
+        endpoint: http://localhost:4001/graphql
+    transforms:
+      - federation:
+          types:
+            - name: Query
+              config:
+                extend: true
+            - name: Account
+              config:
+                keyFields:
+                  - id

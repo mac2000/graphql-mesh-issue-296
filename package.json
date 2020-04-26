@@ -1,0 +1,37 @@
+{
+  "name": "graphql-mesh-issue-296",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "graphql-mesh serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mac2000/graphql-mesh-issue-296.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mac2000/graphql-mesh-issue-296/issues"
+  },
+  "homepage": "https://github.com/mac2000/graphql-mesh-issue-296#readme",
+  "dependencies": {
+    "@apollo/gateway": "^0.14.1",
+    "@graphql-mesh/cli": "^0.1.10",
+    "@graphql-mesh/graphql": "^0.1.10",
+    "@graphql-mesh/handler-federation": "^0.1.10",
+    "@graphql-mesh/openapi": "^0.1.10",
+    "@graphql-mesh/runtime": "^0.1.10",
+    "@graphql-mesh/transform-extend": "^0.1.10",
+    "@graphql-mesh/transform-federation": "^0.1.10",
+    "@graphql-mesh/transform-filter-schema": "^0.1.10",
+    "@graphql-mesh/transform-prefix": "^0.1.10",
+    "@graphql-mesh/transform-rename": "^0.1.10",
+    "moment": "^2.24.0",
+    "@apollo/federation": "^0.12.1",
+    "apollo-server": "^2.10.1",
+    "graphql": "^14.6.0"
+  }
+}
